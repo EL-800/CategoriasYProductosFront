@@ -1,0 +1,31 @@
+<section class="container">
+    <h3>Detalle Categoria</h3>
+
+    <form (ngSubmit)="editarCategoria()">
+        <div class="mb-3 row">
+            <label for="id" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-5">
+                <input [ngModel]="categoria.idCategoria" class="form-control" name="id" disabled>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-5">
+                <input [(ngModel)]="categoria.nombreCategoria" class="form-control" name="nombre">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="descripcion" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-5">
+                <input [(ngModel)]="categoria.descripcionCategoria" class="form-control" name="descripcion">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="mb-4">
+                <button class="btn btn-primary" type="submit">Editar</button>
+            </div>
+            
+        </div>
+    </form>
+</section>

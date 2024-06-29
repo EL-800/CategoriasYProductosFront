@@ -1,0 +1,38 @@
+<section class="container">
+    <h3>Agregar Producto</h3>
+    <form (ngSubmit)="AgregarProducto()">
+        <div class="mb-3 row">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="producto.nombreProducto" type="text" class="form-control" name="nombre" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="descripcion" class="col-sm-2 col-form-label">Descripcion</label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="producto.descripcionProducto" type="text" class="form-control" name="descripcion" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="existencia" class="col-sm-2 col-form-label">Existencia</label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="producto.existencia" type="number" class="form-control" name="existencia" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="precio" class="col-sm-2 col-form-label">Precio</label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="producto.precio" type="number" class="form-control" name="precio" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="categoria" class="col-sm-2 col-form-label">Id Categoria</label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="producto.idCategoria" type="text" class="form-control" name="categoria" required>
+            </div>
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-primary" type="submit">Agregar</button>
+        </div>
+    </form>
+</section>
