@@ -1,4 +1,4 @@
 export const environment = {
     production : false,
-    URL_API_BACKEND :'http://localhost:8080/api/'
+    URL_API_BACKEND :'https://productosycategoriasback.politeforest-bed8f698.eastus2.azurecontainerapps.io/api/'
 };
